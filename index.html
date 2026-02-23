@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Con amore e gratitudine</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 50px;
+            max-width: 600px;
+            text-align: center;
+            animation: slideIn 0.8s ease-out;
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        h1 {
+            color: #764ba2;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            animation: heartbeat 0.6s ease-in-out;
+        }
+        
+        .heart {
+            display: inline-block;
+            animation: beat 1.5s infinite;
+        }
+        
+        @keyframes beat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            25% {
+                transform: scale(1.3);
+            }
+            50% {
+                transform: scale(1);
+            }
+        }
+        
+        .message {
+            color: #333;
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin: 30px 0;
+        }
+        
+        .thank-you {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 30px;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+        
+        .signature {
+            margin-top: 40px;
+            color: #764ba2;
+            font-style: italic;
+            font-size: 1.1em;
+        }
+        
+        .decoration {
+            font-size: 2em;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            Vi voglio un bene
+            <span class="heart">❤️</span>
+        </h1>
+        
+        <div class="decoration">💝 🌟 💝</div>
+        
+        <div class="message">
+            <p>Vi volevo dedicare questa pagina per dirvi quanto siete speciali per me e quanto apprezzo tutto ciò che fate, Ciò che apprezzo di voi è il fatto che per qualsiasi cosa ci siete e mi supportate anche se so bene che non lo dimostro.</p>
+        </div>
+        
+        <div class="thank-you">
+            <h2 style="margin-bottom: 15px;">Grazie di cuore</h2>
+            <p>Grazie per il vostro amore, per il supporto costante in ogni momento bello o brutto, per credere in me più di quanto io credo in me stessa e per essere sempre al mio fianco.</p>
+            <p style="margin-top: 15px;">Siete la mia forza, la mia guida e il mio rifugio sicuro, anche se so bene che non riesco a dimostrarlo.</p>
+        </div>
+        
+        <div class="signature">
+            Con tutto l'amore del mio cuore 💕
+        </div>
+    </div>
+</body>
+</html>
