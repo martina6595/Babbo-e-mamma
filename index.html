@@ -102,6 +102,68 @@
         .bg-heart:nth-child(19) { --left: 40%; --dur: 10.2s;--delay: 0.3s; }
         .bg-heart:nth-child(20) { --left: 10%; --dur: 8.6s; --delay: 2.2s; }
 
+        /* Glitter dots */
+        .bg-glitter {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: #FFFFFF;
+            border-radius: 50%;
+            opacity: 0;
+            animation: sparkle 2s infinite;
+            left: var(--g-left, 50%);
+            top: var(--g-top, 50%);
+            animation-delay: var(--g-delay, 0s);
+            will-change: opacity, transform;
+        }
+
+        @keyframes sparkle {
+            0% {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.5);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+        }
+
+        /* Positions for glitter instances */
+        .bg-glitter:nth-child(1)  { --g-left: 10%; --g-top: 20%;  --g-delay: 0s; }
+        .bg-glitter:nth-child(2)  { --g-left: 25%; --g-top: 10%;  --g-delay: 0.3s; }
+        .bg-glitter:nth-child(3)  { --g-left: 80%; --g-top: 15%;  --g-delay: 0.6s; }
+        .bg-glitter:nth-child(4)  { --g-left: 60%; --g-top: 25%;  --g-delay: 0.9s; }
+        .bg-glitter:nth-child(5)  { --g-left: 40%; --g-top: 5%;   --g-delay: 1.2s; }
+        .bg-glitter:nth-child(6)  { --g-left: 15%; --g-top: 60%;  --g-delay: 1.5s; }
+        .bg-glitter:nth-child(7)  { --g-left: 70%; --g-top: 50%;  --g-delay: 1.8s; }
+        .bg-glitter:nth-child(8)  { --g-left: 50%; --g-top: 40%;  --g-delay: 2.1s; }
+        .bg-glitter:nth-child(9)  { --g-left: 90%; --g-top: 80%;  --g-delay: 2.4s; }
+        .bg-glitter:nth-child(10) { --g-left: 30%; --g-top: 75%;  --g-delay: 2.7s; }
+        .bg-glitter:nth-child(11) { --g-left: 65%; --g-top: 85%;  --g-delay: 3s; }
+        .bg-glitter:nth-child(12) { --g-left: 20%; --g-top: 90%;  --g-delay: 3.3s; }
+        .bg-glitter:nth-child(13) { --g-left: 55%; --g-top: 70%;  --g-delay: 3.6s; }
+        .bg-glitter:nth-child(14) { --g-left: 85%; --g-top: 30%;  --g-delay: 3.9s; }
+        .bg-glitter:nth-child(15) { --g-left: 5%;  --g-top: 50%;  --g-delay: 4.2s; }
+        .bg-glitter:nth-child(16) { --g-left: 95%; --g-top: 60%;  --g-delay: 4.5s; }
+        .bg-glitter:nth-child(17) { --g-left: 45%; --g-top: 20%;  --g-delay: 4.8s; }
+        .bg-glitter:nth-child(18) { --g-left: 75%; --g-top: 10%;  --g-delay: 5.1s; }
+        .bg-glitter:nth-child(19) { --g-left: 35%; --g-top: 95%;  --g-delay: 5.4s; }
+        .bg-glitter:nth-child(20) { --g-left: 60%; --g-top: 90%;  --g-delay: 5.7s; }
+        .bg-glitter:nth-child(21) { --g-left: 15%; --g-top: 30%;  --g-delay: 6s; }
+        .bg-glitter:nth-child(22) { --g-left: 85%; --g-top: 90%;  --g-delay: 6.3s; }
+        .bg-glitter:nth-child(23) { --g-left: 50%; --g-top: 10%;  --g-delay: 6.6s; }
+        .bg-glitter:nth-child(24) { --g-left: 25%; --g-top: 40%;  --g-delay: 6.9s; }
+        .bg-glitter:nth-child(25) { --g-left: 90%; --g-top: 50%;  --g-delay: 7.2s; }
+        .bg-glitter:nth-child(26) { --g-left: 10%; --g-top: 80%;  --g-delay: 7.5s; }
+        .bg-glitter:nth-child(27) { --g-left: 40%; --g-top: 10%;  --g-delay: 7.8s; }
+        .bg-glitter:nth-child(28) { --g-left: 70%; --g-top: 20%;  --g-delay: 8.1s; }
+        .bg-glitter:nth-child(29) { --g-left: 20%; --g-top: 60%;  --g-delay: 8.4s; }
+        .bg-glitter:nth-child(30) { --g-left: 80%; --g-top: 70%;  --g-delay: 8.7s; }
+
         .container {
             background: white;
             border-radius: 20px;
@@ -210,6 +272,37 @@
         <span class="bg-heart"></span>
         <span class="bg-heart"></span>
         <span class="bg-heart"></span>
+        <!-- glitter dots -->
+        <span class="bg-glitter"></span>
+        <span class="bg-glitter"></span>
+        <span class="bg-glitter"></span>
+        <span class="bg-glitter"></span>
+        <span class="bg-glitter"></span>
+        <span class="bg-glitter"></span>
+        <span class="bg-glitter"></span>
+        <span class="bg-glitter"></span>
+        <span class="bg-glitter"></span>
+        <span class="bg-glitter"></span>
+        <span class="bg-glitter"></span>
+        <span class="bg-glitter"></span>
+        <span class="bg-glitter"></span>
+        <span class="bg-glitter"></span>
+        <span class="bg-glitter"></span>
+        <span class="bg-glitter"></span>
+        <span class="bg-glitter"></span>
+        <span class="bg-glitter"></span>
+        <span class="bg-glitter"></span>
+        <span class="bg-glitter"></span>
+        <span class="bg-glitter"></span>
+        <span class="bg-glitter"></span>
+        <span class="bg-glitter"></span>
+        <span class="bg-glitter"></span>
+        <span class="bg-glitter"></span>
+        <span class="bg-glitter"></span>
+        <span class="bg-glitter"></span>
+        <span class="bg-glitter"></span>
+        <span class="bg-glitter"></span>
+        <span class="bg-glitter"></span>
     </div>
 
     <div class="container">
